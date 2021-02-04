@@ -13,11 +13,7 @@ class Song
   end
 end 
 
-#   def author_name
-#     if self.author != nil 
-#       self.author.name 
-#   end 
-# end 
+
   def save
     @@all << self 
   end 
