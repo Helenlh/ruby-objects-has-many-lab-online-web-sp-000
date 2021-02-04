@@ -7,10 +7,15 @@ class Song
     save 
   end 
   
-  def artist_name(artist=nil)
-    self.artist.name
+  def artist_name
+    if self.artist != nil
+      self.artist.name 
   end 
-  
+#   def author_name
+#     if self.author != nil 
+#       self.author.name 
+#   end 
+# end 
   def save
     @@all << self 
   end 
